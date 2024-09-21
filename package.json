@@ -1,45 +1,17 @@
 {
-  "_from": "homebridge-ismartgate@1.2.0",
-  "_inBundle": false,
-  "_integrity": "sha512-dBTioBM8F/gkOnNTtiu+U+GUYi0GEdMh/03K2QdhwqXXUpPlLsLBJiZfydVvcJX1V6zbBqZ5c9/epwqJ4QN6Gg==",
-  "_location": "/homebridge-ismartgate",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "homebridge-ismartgate@1.2.0",
-    "name": "homebridge-ismartgate",
-    "escapedName": "homebridge-ismartgate",
-    "rawSpec": "1.2.0",
-    "saveSpec": null,
-    "fetchSpec": "1.2.0"
-  },
-  "_requiredBy": [
-    "#USER"
-  ],
-  "_resolved": "https://registry.npmjs.org/homebridge-ismartgate/-/homebridge-ismartgate-1.2.0.tgz",
-  "_shasum": "23cf8741e747736fd013dfd0e51c8f768c93cc9c",
-  "_spec": "homebridge-ismartgate@1.2.0",
-  "_where": "/usr/local",
-  "author": {
-    "name": "codyc1515"
-  },
-  "bugs": {
-    "url": "https://github.com/codyc1515/homebridge-ismartgate/issues"
-  },
-  "bundleDependencies": false,
+  "name": "homebridge-ismartgate-sensor",
+  "displayName": "ismartgate sensor",
+  "version": "1.4.3",
+  "author": "John Valiquette",
   "dependencies": {
-    "mdns-js": "^1.0.3",
-    "request": "^2.88.0"
+    "axios": "^1.7.7"
   },
   "deprecated": false,
-  "description": "Homebridge plug-in for iSmartGate HomeKit devices to expose their Temperature & Battery services, which would otherwise be hidden.",
-  "devDependencies": {},
+  "description": "Homebridge plug-in for iSmartGate HomeKit devices to expose their Temperature & Battery sensor, which would otherwise be hidden.",
   "engines": {
-    "homebridge": ">=0.4.0",
-    "node": ">=8.6.0"
+    "homebridge": "^1.8.0 || ^2.0.0-beta.0",
+    "node": "^18.20.0 || ^20.17.0 || ^22.9.0"
   },
-  "homepage": "https://github.com/codyc1515/homebridge-ismartgate#readme",
   "keywords": [
     "homebridge-plugin",
     "homekit",
@@ -52,13 +24,15 @@
   ],
   "license": "MIT",
   "main": "index.js",
-  "name": "homebridge-ismartgate",
+  "homepage": "https://github.com/valiquette/homebridge-ismartgate-sensor/blob/master/README.md",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codyc1515/homebridge-ismartgate.git"
+    "url": "git+https://github.com/valiquette/homebridge-ismartgate-sensor"
+  },
+  "bugs": {
+    "url": "https://github.com/codyc1515/homebridge-ismartgate/issues"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "1.4.2"
+  }
 }
