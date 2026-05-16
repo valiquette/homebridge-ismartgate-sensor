@@ -1,16 +1,16 @@
 {
   "name": "homebridge-ismartgate-sensor",
   "displayName": "ismartgate sensor",
-  "version": "1.4.4",
+  "version": "1.4.5",
   "author": "John Valiquette",
   "dependencies": {
-    "axios": "^1.7.7"
+    "axios": "^1.16.0"
   },
   "deprecated": false,
   "description": "Homebridge plug-in for iSmartGate HomeKit devices to expose their Temperature & Battery sensor, which would otherwise be hidden.",
   "engines": {
-		"homebridge": "^1.11.0 || ^2.0.0-beta.0",
-		"node": "^20.19.0 || ^22.19.0 ||^24.11.0"
+		"homebridge": "^1.11.0 || ^2.0.0",
+		"node": "^20.20.0 || ^22.22.0 ||^24.15.0"
   },
   "keywords": [
     "homebridge-plugin",
