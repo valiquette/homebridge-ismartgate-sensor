@@ -1,5 +1,10 @@
 # Changes
 
+## 1.4.6
+Update
+-  fix charertersitic warning when sensor is not detected.
+-  updated dependancies
+
 ## 1.4.5
 Update
 -  updated dependancies

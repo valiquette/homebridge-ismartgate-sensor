@@ -167,21 +167,40 @@ iSmartGate.prototype = {
 				this.log.debug('Obtained status.', response.data)
 
 				// Find the CurrentTemperature
-				this.CurrentTemperature = response.data[0] / 1000
+				if (response.data[0] > -270 && response.data[0] < 100) {
+					this.CurrentTemperature = response.data[0] / 1000
+				}
+				else {
+					this.log.warn('Unexpected temperature detected.', response.data)
+					this.log.warn('Check sensor battery')
+					this.CurrentTemperature = 0
+				}
 
 				// Find the BatteryLevel
 				switch (response.data[1]) {
 					case 'full':
 						this.BatteryLevel = 100
 						break
+					case '90':
+						this.BatteryLevel = 90
+						break
 					case '80':
 						this.BatteryLevel = 80
+						break
+					case '70':
+						this.BatteryLevel = 70
 						break
 					case '60':
 						this.BatteryLevel = 60
 						break
+					case '50':
+						this.BatteryLevel = 50
+						break
 					case '40':
 						this.BatteryLevel = 40
+						break
+					case '30':
+						this.BatteryLevel = 30
 						break
 					case '20':
 						this.BatteryLevel = 20
@@ -192,6 +211,7 @@ iSmartGate.prototype = {
 
 					default:
 						this.log.warn('Unexpected BatteryLevel detected.', response.data)
+						this.log.warn('Check sensor battery')
 						this.BatteryLevel = 0
 						break
 				}
