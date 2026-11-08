@@ -167,7 +167,7 @@ iSmartGate.prototype = {
 				this.log.debug('Obtained status.', response.data)
 
 				// Find the CurrentTemperature
-				if (response.data[0] > -270 && response.data[0] < 100) {
+				if (response.data[0] > -270000 && response.data[0] < 100000) {
 					this.CurrentTemperature = response.data[0] / 1000
 				}
 				else {
